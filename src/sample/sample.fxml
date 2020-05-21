@@ -1,0 +1,28 @@
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane
+            style="-fx-background-image: url(file:../../assets/di-logo-java-blue.png);
+                    -fx-background-size : 300 300;
+                "
+            fx:controller="sample.Controller"
+            xmlns:fx="http://javafx.com/fxml"  >
+    <Button style="-fx-background-color : yellow"
+
+            layoutX="100"
+            layoutY="250"
+            text="نشریه صفر و یک"
+            prefWidth="100"
+            prefHeight="25"
+            onMouseClicked="#buttonAction"
+    >
+
+        <tooltip>
+            <Tooltip onShowing="#toolipAction" text="this is a button"/>
+        </tooltip>
+
+    </Button>
+
+
+</AnchorPane>
